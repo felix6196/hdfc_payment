@@ -11,7 +11,7 @@
     'images' : 'static/description/icon.png',
     'live_test_url':'',
     'license': 'AGPL-3',
-    'price': 1.00,
+    'price': 70.00,
     'currency': 'USD',
     'depends' : ['base','website_sale', 'payment'],
     'data': [
