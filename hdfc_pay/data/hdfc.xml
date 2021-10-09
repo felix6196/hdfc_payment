@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data >
+        <record id="payment_hdfc_acquirer" model="payment.acquirer">
+            <field name="name">HDFC</field>
+            <field name="image_128" type="base64" file="HDFC/static/description/hdfc.jpg"/>
+            <field name="provider">hdfc</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="hdfc_payment_button"/>
+            
+            
+			<field name="merchant_id">654321</field>
+			<field name="access_code">JKHGDFGHJRREWIUIU123</field>
+			<field name="working_key">KJHDGUIREJK2J1</field>
+			<field name="redirect_url">dummy</field>
+			<field name="website_security">http</field>
+			<!-- <field name="acquirer_code">hdfc</field> -->
+        </record>
+    </data>
+</openerp>
