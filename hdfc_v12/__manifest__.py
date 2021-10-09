@@ -1,6 +1,6 @@
 {
     'name' : 'HDFC Payment Gateway',
-    'version' : '12.0.1.0.0',
+    'version' : '12',
     'summary': 'It helps to Integrate your ecommerce with HDFC Payment Gateway',
     'sequence': -1,
     'description': """
