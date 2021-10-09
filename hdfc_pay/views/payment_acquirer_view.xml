@@ -1,0 +1,26 @@
+<openerp>
+  <data>
+        <record id="acquirer_form_HDFC" model="ir.ui.view">
+            <field name="name">HDFC Acquirer Form</field>
+            <field name="model">payment.acquirer</field>
+            <field name="inherit_id" ref="payment.acquirer_form"/>
+            <field name="arch" type="xml">
+                <xpath expr='//page[1]' position="after">
+                      <page string="Merchant Configuration">
+                      <group>
+                          <group>
+                              <field name="merchant_id" required="1"/>
+                              <field name="access_code" required="1"/>
+                              <field name="website_security" required="1"/>
+                          </group>
+                          <group>
+                              <field name="working_key" required="1"/>
+                              <field name="redirect_url" required="1"/>
+                          </group>
+                          </group>
+                      </page>
+               </xpath>
+            </field>
+        </record>
+  </data>
+</openerp>
