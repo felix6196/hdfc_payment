@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="HDFC_payment_pay" name="HDFCPayment">
+			<t t-call="website.layout">
+				<form method="post" name="redirect" id="HDFC_templates_form"
+					t-attf-action="#{redirect_to}">
+					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+					<input type="hidden" name="csrf_token"
+						t-att-value="request.csrf_token()" />
+					<input class="hide" type='text' name='encRequest' t-att-value='encRequest'></input>
+					<input class="hide" type='text' name='access_code' t-att-value='access_code'></input>
+                    <input class="hide" type='text' name='redirect_to' t-att-value='redirect_to'></input>
+					<button class="hide btn-payment" type="submit">Submit</button>
+					<script language='javascript'>document.redirect.submit();</script>
+				</form>
+			</t>
+		</template>
+	</data>
+</openerp>
