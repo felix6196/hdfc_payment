@@ -6,6 +6,7 @@
     'description': """
     """,
     'category': 'Payment Gateway',
+    'author': 'agaramsoft',
     'website': 'https://agaramsoft.com/',
     'images' : 'static/description/icon.png',
     'live_test_url':'',
